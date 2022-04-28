@@ -1,0 +1,35 @@
+/* 섹션으로 메인과 오른쪽으로 구분 */
+.section {
+    display: flex;
+    flex-direction: row; /* row로 설정할경우 가로로 정렬됨*/
+    justify-content: center;
+    align-items: center;
+}
+
+/* 섹션 구분 */
+.main_section {
+    background-color: gray;
+    width: 500px;
+    height: 300px;
+
+}
+
+.right_section {
+    background-color: blue;
+    width: 500px;
+    height: 300px;
+}
+
+/* 헤더 부분 */
+header {
+    background-color: black;
+    width: auto;
+    height: 50px;
+}
+
+/* 푸터 부분 */
+footer {
+    background-color: darkred;
+    width: auto;
+    height: 100px;
+}
