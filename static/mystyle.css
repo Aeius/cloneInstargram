@@ -1,29 +1,30 @@
 /* 섹션으로 메인과 오른쪽으로 구분 */
 .section {
     display: flex;
-    flex-direction: row; /* row로 설정할경우 가로로 정렬됨*/
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    padding-top: 60px;
+    background-color: #FAFAFA;
 }
 
 /* 섹션 구분 */
 .main_section {
-    background-color: gray;
-    width: 500px;
-    height: 300px;
+    width: 600px;
+    height: 3000px;
+    margin-right: 360px;
 }
 
 .main_profile_section {
-    display: flex;
-    flex-direction: row; /* row로 설정할경우 가로로 정렬됨*/
-    justify-content: center;
-    align-items: center;
+    border: solid 1px gray;
+    background-color: white
 }
 
 .right_section {
-    background-color: darkslateblue;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 1000px;
+    background-color: blue;
+    position: fixed;
+    left: 62%
 }
 
 .profile_section {
@@ -36,33 +37,26 @@
     align-items: center;
 }
 
-.right_section > .recommand_section {
-    background-color: yellowgreen;
-    width: 500px;
-    height: 50px;
-    display: flex;
-    flex-direction: row; /* row로 설정할경우 가로로 정렬됨*/
-    justify-content: center;
-    align-items: center;
-}
-
-.comment {
-    width: 500px;
-}
-
 .profile_img {
-    float: left;
-    background-color: cadetblue;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.profile {
-    width: 350px;
-    background-color: peru;
+.profile_box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    justify-content: space-between;
 }
 
-.more_btn {
-    float: right;
-    background-color: yellow;
+.img_box {
+    width: 50px;
+    height: 50px;
+    border-radius: 70%;
+    overflow: hidden;
+    margin: 10px;
 }
 
 /* 헤더 부분 */
@@ -74,11 +68,6 @@ header {
     flex-direction: row; /* row로 설정할경우 가로로 정렬됨*/
     justify-content: center;
     align-items: center;
-}
-
-header > .logo {
-    background-color: aquamarine;
-
 }
 
 /* 푸터 부분 */
