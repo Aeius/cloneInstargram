@@ -21,35 +21,51 @@
 <script src="https://kit.fontawesome.com/ff113c8133.js" crossorigin="anonymous"></script>
 <!-- script 파일 연결-->
 <script src="script.js"></script>
+<!--    폰트 삽입-->
+<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
 
 <body>
 <header>
     <nav>
         <div class="container-fluid">
-            <div>
+            <div style="margin: 10px 0 0 0">
                 <a class="navbar-brand"><img
                         src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"></a>
             </div>
-            <div>
+            <div style="margin: 5px 0 0 0">
                 <form class="d-flex">
-                    <input class="form-control me-2" width="400px" type="search" placeholder="검색" aria-label="Search"
-                           style="background-color: darkgray">
+                    <input class="form-control me-2" type="search" placeholder="검색" aria-label="Search"
+                           style="background-color: lightgray; width:350px;">
                 </form>
             </div>
-            <div>
-                <a href="index.html"> <span><i class="fa-solid fa-house fa-lg"></i></span></a>
-                <a href="index.html"> <span><i class="fa-regular fa-paper-plane fa-lg"></i></span></a>
-                <a href="index.html"> <span><i class="fa-regular fa-square-plus fa-lg"></i></span></a>
-                <a href="index.html"> <span><i class="fa-regular fa-compass fa-lg"></i></span></a>
-                <a href="index.html"> <span><i class="fa-regular fa-heart fa-lg"></i></span></a>
+            <div class="nav_menu">
+                <div class="icon">
+                    <a href="index.html"> <span><i class="fa-solid fa-house fa-lg"></i></span></a>
+                </div>
+                <div class="icon">
+                    <a href="index.html"> <span><i class="fa-regular fa-paper-plane fa-lg"></i></span></a>
+                </div>
+                <div class="icon">
+                    <a href="index.html"> <span><i class="fa-regular fa-square-plus fa-lg"></i></span></a>
+                </div>
+                <div class="icon">
+                    <a href="index.html"> <span><i class="fa-regular fa-compass fa-lg"></i></span></a>
+                </div>
+                <div class="icon">
+                    <a href="index.html"> <span><i class="fa-regular fa-heart fa-lg"></i></span></a>
+                </div>
+                <div class="img_box" style="width: 30px; height: 30px">
+                    <a href="index.html"><img class="profile_img"
+                                              src="https://blog.kakaocdn.net/dn/bGWJt0/btq7C4Qm17U/L5scNUgpQwxHgQ85uPBFg1/img.png"></a>
+                </div>
             </div>
         </div>
-
     </nav>
 </header>
 <section>
-    <!-- 피드 표시 되는 곳 -->
+    <!-- 좌측 피드 표시 되는 곳 -->
     <div class="main_section">
+        <!-- 게시물 1 -->
         <div class="main_feed">
             <!-- 피드 맨위 프로필 사진, 닉네임, 더보기 나오는 공간-->
             <div class="main_profile_section">
@@ -69,45 +85,7 @@
                             <i class="fa-solid fa-ellipsis" fa-lg></i>
                         </a>
                     </div>
-                    <!-- 프로필 옆 더보기 클릭했을 때 작동하는 모달-->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                         aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal_ellipsis" style="color: red; text-align: center; padding-top: 10px">
-                                    <a>신고</a>
-                                </div>
-                                <hr>
-                                <div class="modal_ellipsis">
-                                    <a>게시물 이동</a>
-                                </div>
-                                <hr>
-                                <div class="modal_ellipsis_r">
-                                    <a>팔로우 취소</a>
-                                </div>
-                                <hr>
-                                <div class="modal_ellipsis">
-                                    <a>게시물 이동</a>
-                                </div>
-                                <hr>
-                                <div class="modal_ellipsis">
-                                    <a>공유 대상...</a>
-                                </div>
-                                <hr>
-                                <div class="modal_ellipsis">
-                                    <a>링크 복사</a>
-                                </div>
-                                <hr>
-                                <div class="modal_ellipsis">
-                                    <a>퍼가기</a>
-                                </div>
-                                <hr>
-                                <div class="modal_ellipsis">
-                                    <a data-bs-dismiss="modal">취소</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
             <!-- 올린 이미지가 출력 되는 공간 carousel -->
@@ -146,6 +124,7 @@
             </div>
             <!-- 여러가지 버튼이 있는 곳(좋아요, 댓글, 공유, 스크랩) -->
             <div class="main_btn" style="display: flex; flex-direction: row; justify-content: space-between">
+                <!--좋아요, 댓글창, 공유 버튼 묶음-->
                 <div style="display: flex; flex-direction: row; margin: 15px">
                     <!-- 좋아요 버튼-->
                     <div>
@@ -160,27 +139,7 @@
                             <span><i class="fa-regular fa-comment-dots fa-lg"></i></span>
                         </a>
                     </div>
-                    <!-- 댓글창 버튼 눌렀을 경우 열리는 모달창 -->
-                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
-                         aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel2">Modal title</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    댓글 창
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
-                                    </button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                     <!-- 공유 버튼  -->
                     <div>
                         <a data-bs-toggle="modal"
@@ -188,28 +147,8 @@
                             <span><i class="fa-regular fa-paper-plane fa-lg"></i></span>
                         </a>
                     </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
-                         aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel3">Modal title</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    공유 버튼
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
-                                    </button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
+                <!--북마크 버튼 묶음-->
                 <div style="margin-top: 15px;">
                     <!-- 북마크 버튼-->
                     <a onclick="">
@@ -217,10 +156,13 @@
                     </a>
                 </div>
             </div>
+            <!-- 이미지 아래로 게시글 정보가 출력되는 곳 -->
             <div class="main_inter_section">
+                <!-- 좋아요 -->
                 <div style="margin: 0px 10px 0px 15px;">
                     <a data-bs-toggle="modal" data-bs-target="#exampleModal2"> 좋아요 999개 </a>
                 </div>
+                <!-- 닉네임, 작성 글 내용-->
                 <div class="profile_box">
                     <div style="display: flex; flex-direction: row; align-items: center">
                         <div>
@@ -231,6 +173,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- 댓글 총갯수 및 모든 댓글 보기-->
                 <div style="margin: 0px 10px 0px 15px;">
                     <a data-bs-toggle="modal" data-bs-target="#exampleModal2">댓글 <span class="reply_count">299</span>개
                         모두 보기</a><br>
@@ -253,6 +196,7 @@
                         <span class="content">기분 좋은 향기가 솔솔~</span>
                     </div>
                 </div>
+                <!-- 날짜 표시 -->
                 <div style="margin: 0px 10px 0px 15px;">
                     <a href="index.html" class="" style="text-decoration: none">5일 전</a>
                 </div>
@@ -261,9 +205,321 @@
             <hr>
             <!--  댓글 쓰는 칸-->
             <div class="reply_section" style="padding: 0 15px; display: flex; flex-direction: row;">
+                <!--이모티콘 삽입-->
                 <div style="margin: 5px">
                     <a href="..." class="profile_img"><i class="fa-regular fa-face-smile fa-lg"></i></a>
                 </div>
+                <!--댓글 작성-->
+                <form class="">
+                    <div style="display: flex;flex-direction: row; justify-content: space-between; width: 500px;">
+                        <div class="">
+                            <input type="text" style="border: none; background-color: #FAFAFA; outline: none"
+                                   width="300px" placeholder="댓글 작성">
+                        </div>
+                        <div class="">
+                            <a class="" style="color: cornflowerblue; text-decoration: none">게시</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- 게시물 2 -->
+        <div class="main_feed">
+            <!-- 피드 맨위 프로필 사진, 닉네임, 더보기 나오는 공간-->
+            <div class="main_profile_section">
+                <div class="profile_box">
+                    <div class="profile">
+                        <div class="img_box">
+                            <a href="index.html"><img class="profile_img"
+                                                      src="https://blog.kakaocdn.net/dn/bGWJt0/btq7C4Qm17U/L5scNUgpQwxHgQ85uPBFg1/img.png"></a>
+                        </div>
+                        <div>
+                            <a href="index.html" class=""><b>mokoko</b></a>
+                        </div>
+                    </div>
+                    <!-- 프로필 옆 더보기 버튼 -->
+                    <div>
+                        <a data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="fa-solid fa-ellipsis" fa-lg></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <!-- 올린 이미지가 출력 되는 공간 carousel -->
+            <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0"
+                            class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <!-- 출력할 사진들 - 1 -->
+                    <div class="carousel-item active">
+                        <img style="width: 100%; height: 100%"
+                             src="https://i.ytimg.com/vi/FPjhL_kNCmw/maxresdefault.jpg"
+                             class="d-block w-100" alt="...">
+                    </div>
+                    <!-- 출력할 사진들 - 2 -->
+                    <div class="carousel-item">
+                        <img style="width: 100%; height: 100%"
+                             src="img/hamkoko.png"
+                             class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
+                        data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
+                        data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!-- 여러가지 버튼이 있는 곳(좋아요, 댓글, 공유, 스크랩) -->
+            <div class="main_btn" style="display: flex; flex-direction: row; justify-content: space-between">
+                <!--좋아요, 댓글창, 공유 버튼 묶음-->
+                <div style="display: flex; flex-direction: row; margin: 15px">
+                    <!-- 좋아요 버튼-->
+                    <div>
+                        <a onclick="">
+                            <span><i class="fa-regular fa-heart fa-lg"></i></span>
+                        </a>
+                    </div>
+                    <!-- 댓글창 버튼 -->
+                    <div>
+                        <a data-bs-toggle="modal"
+                           data-bs-target="#exampleModal2">
+                            <span><i class="fa-regular fa-comment-dots fa-lg"></i></span>
+                        </a>
+                    </div>
+
+                    <!-- 공유 버튼  -->
+                    <div>
+                        <a data-bs-toggle="modal"
+                           data-bs-target="#exampleModal3">
+                            <span><i class="fa-regular fa-paper-plane fa-lg"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <!--북마크 버튼 묶음-->
+                <div style="margin-top: 15px;">
+                    <!-- 북마크 버튼-->
+                    <a onclick="">
+                        <span><i class="fa-regular fa-bookmark fa-lg"></i></span>
+                    </a>
+                </div>
+            </div>
+            <!-- 이미지 아래로 게시글 정보가 출력되는 곳 -->
+            <div class="main_inter_section">
+                <!-- 좋아요 -->
+                <div style="margin: 0px 10px 0px 15px;">
+                    <a data-bs-toggle="modal" data-bs-target="#exampleModal2"> 좋아요 999개 </a>
+                </div>
+                <!-- 닉네임, 작성 글 내용-->
+                <div class="profile_box">
+                    <div style="display: flex; flex-direction: row; align-items: center">
+                        <div>
+                            <a href="index.html" class="" style="margin: 0px 10px 0px 10px;"><b>mokoko</b></a>
+                        </div>
+                        <div class="content_box">
+                            <span class="content">모코코 맘스세트 존맛!</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 댓글 총갯수 및 모든 댓글 보기-->
+                <div style="margin: 0px 10px 0px 15px;">
+                    <a data-bs-toggle="modal" data-bs-target="#exampleModal2">댓글 <span class="reply_count">299</span>개
+                        모두 보기</a><br>
+                </div>
+                <!-- 댓글들 - 1 -->
+                <div style="display: flex; flex-direction: row; align-items: center">
+                    <div>
+                        <a href="index.html" class="" style="margin: 0px 10px 0px 15px;"><b>bahunthur</b></a>
+                    </div>
+                    <div class="content_box">
+                        <span class="content">아우님! 치킨에는 맥주아니겠어?! 한잔하자구!</span>
+                    </div>
+                </div>
+                <!-- 댓글들 - 2 -->
+                <div style="display: flex; flex-direction: row; align-items: center">
+                    <div>
+                        <a href="index.html" class="" style="margin: 0px 10px 0px 15px;"><b>mokamoka</b></a>
+                    </div>
+                    <div class="content_box">
+                        <span class="content">치킨 향기가 솔솔~</span>
+                    </div>
+                </div>
+                <!-- 날짜 표시 -->
+                <div style="margin: 0px 10px 0px 15px;">
+                    <a href="index.html" class="" style="text-decoration: none">16일 전</a>
+                </div>
+            </div>
+
+            <hr>
+            <!--  댓글 쓰는 칸-->
+            <div class="reply_section" style="padding: 0 15px; display: flex; flex-direction: row;">
+                <!--이모티콘 삽입-->
+                <div style="margin: 5px">
+                    <a href="..." class="profile_img"><i class="fa-regular fa-face-smile fa-lg"></i></a>
+                </div>
+                <!--댓글 작성-->
+                <form class="">
+                    <div style="display: flex;flex-direction: row; justify-content: space-between; width: 500px;">
+                        <div class="">
+                            <input type="text" style="border: none; background-color: #FAFAFA; outline: none"
+                                   width="300px" placeholder="댓글 작성">
+                        </div>
+                        <div class="">
+                            <a class="" style="color: cornflowerblue; text-decoration: none">게시</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- 게시물 3 -->
+        <div class="main_feed">
+            <!-- 피드 맨위 프로필 사진, 닉네임, 더보기 나오는 공간-->
+            <div class="main_profile_section">
+                <div class="profile_box">
+                    <div class="profile">
+                        <div class="img_box">
+                            <a href="index.html"><img class="profile_img"
+                                                      src="https://blog.kakaocdn.net/dn/bGWJt0/btq7C4Qm17U/L5scNUgpQwxHgQ85uPBFg1/img.png"></a>
+                        </div>
+                        <div>
+                            <a href="index.html" class=""><b>mokoko</b></a>
+                        </div>
+                    </div>
+                    <!-- 프로필 옆 더보기 버튼 -->
+                    <div>
+                        <a data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="fa-solid fa-ellipsis" fa-lg></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <!-- 올린 이미지가 출력 되는 공간 carousel -->
+            <div id="carouselExampleIndicators3" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0"
+                            class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                </div>
+                <div class="carousel-inner">
+                    <!-- 출력할 사진들 - 1 -->
+                    <div class="carousel-item active">
+                        <img style="width: 100%; height: 100%"
+                             src="https://cdn-lostark.game.onstove.com/2022/event/220405_event_xmVKDeCx4Y/images/banner_share.jpg?v=20220427111256"
+                             class="d-block w-100" alt="...">
+                    </div>
+                    <!-- 출력할 사진들 - 2 -->
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3"
+                        data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3"
+                        data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!-- 여러가지 버튼이 있는 곳(좋아요, 댓글, 공유, 스크랩) -->
+            <div class="main_btn" style="display: flex; flex-direction: row; justify-content: space-between">
+                <!--좋아요, 댓글창, 공유 버튼 묶음-->
+                <div style="display: flex; flex-direction: row; margin: 15px">
+                    <!-- 좋아요 버튼-->
+                    <div>
+                        <a onclick="">
+                            <span><i class="fa-regular fa-heart fa-lg"></i></span>
+                        </a>
+                    </div>
+                    <!-- 댓글창 버튼 -->
+                    <div>
+                        <a data-bs-toggle="modal"
+                           data-bs-target="#exampleModal2">
+                            <span><i class="fa-regular fa-comment-dots fa-lg"></i></span>
+                        </a>
+                    </div>
+
+                    <!-- 공유 버튼  -->
+                    <div>
+                        <a data-bs-toggle="modal"
+                           data-bs-target="#exampleModal3">
+                            <span><i class="fa-regular fa-paper-plane fa-lg"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <!--북마크 버튼 묶음-->
+                <div style="margin-top: 15px;">
+                    <!-- 북마크 버튼-->
+                    <a onclick="">
+                        <span><i class="fa-regular fa-bookmark fa-lg"></i></span>
+                    </a>
+                </div>
+            </div>
+            <!-- 이미지 아래로 게시글 정보가 출력되는 곳 -->
+            <div class="main_inter_section">
+                <!-- 좋아요 -->
+                <div style="margin: 0px 10px 0px 15px;">
+                    <a data-bs-toggle="modal" data-bs-target="#exampleModal2"> 좋아요 999개 </a>
+                </div>
+                <!-- 닉네임, 작성 글 내용-->
+                <div class="profile_box">
+                    <div style="display: flex; flex-direction: row; align-items: center">
+                        <div>
+                            <a href="index.html" class="" style="margin: 0px 10px 0px 10px;"><b>mokoko</b></a>
+                        </div>
+                        <div class="content_box">
+                            <span class="content">4월 5일은 모코코생일!</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 댓글 총갯수 및 모든 댓글 보기-->
+                <div style="margin: 0px 10px 0px 15px;">
+                    <a data-bs-toggle="modal" data-bs-target="#exampleModal2">댓글 <span class="reply_count">299</span>개
+                        모두 보기</a><br>
+                </div>
+                <!-- 댓글들 - 1 -->
+                <div style="display: flex; flex-direction: row; align-items: center">
+                    <div>
+                        <a href="index.html" class="" style="margin: 0px 10px 0px 15px;"><b>silian</b></a>
+                    </div>
+                    <div class="content_box">
+                        <span class="content">생일 축하하네 친구!</span>
+                    </div>
+                </div>
+                <!-- 댓글들 - 2 -->
+                <div style="display: flex; flex-direction: row; align-items: center">
+                    <div>
+                        <a href="index.html" class="" style="margin: 0px 10px 0px 15px;"><b>chipmunk_yom</b></a>
+                    </div>
+                    <div class="content_box">
+                        <span class="content">생일 축하해욤!</span>
+                    </div>
+                </div>
+                <!-- 날짜 표시 -->
+                <div style="margin: 0px 10px 0px 15px;">
+                    <a href="index.html" class="" style="text-decoration: none">24일 전</a>
+                </div>
+            </div>
+
+            <hr>
+            <!--  댓글 쓰는 칸-->
+            <div class="reply_section" style="padding: 0 15px; display: flex; flex-direction: row;">
+                <!--이모티콘 삽입-->
+                <div style="margin: 5px">
+                    <a href="..." class="profile_img"><i class="fa-regular fa-face-smile fa-lg"></i></a>
+                </div>
+                <!--댓글 작성-->
                 <form class="">
                     <div style="display: flex;flex-direction: row; justify-content: space-between; width: 500px;">
                         <div class="">
@@ -279,6 +535,7 @@
         </div>
     </div>
 
+    <!-- 우측 프로필 표시 되는 곳-->
     <div class="right_section">
         <!--            내 프로필이 나오는 곳-->
         <div class="profile_section">
@@ -291,7 +548,7 @@
                         </div>
                         <div>
                             <a href="index.html" class=""><b>mokoko</b></a><br>
-                            모코코
+                            <span style="color: slategray">모코코</span>
                         </div>
                     </div>
                 </div>
@@ -320,7 +577,7 @@
                         </div>
                         <div>
                             <a href="index.html" class=""><b>ninave</b></a><br>
-                            인기
+                            <span style="color: slategray">인기</span>
                         </div>
                     </div>
                 </div>
@@ -340,7 +597,7 @@
                         </div>
                         <div>
                             <a href="index.html" class=""><b>ealyn</b></a><br>
-                            인기
+                            <span style="color: slategray">인기</span>
                         </div>
                     </div>
                 </div>
@@ -360,7 +617,7 @@
                         </div>
                         <div>
                             <a href="index.html" class=""><b>artist</b></a><br>
-                            인기
+                            <span style="color: slategray">인기</span>
                         </div>
                     </div>
                 </div>
@@ -375,6 +632,90 @@
 
     </div>
 </section>
+
+<!-- 모달 창 모음-->
+<!-- 프로필 옆 더보기 클릭했을 때 작동하는 모달-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal_ellipsis" style="color: red; text-align: center; padding-top: 10px">
+                <a>신고</a>
+            </div>
+            <hr>
+            <div class="modal_ellipsis">
+                <a>게시물 이동</a>
+            </div>
+            <hr>
+            <div class="modal_ellipsis_r">
+                <a>팔로우 취소</a>
+            </div>
+            <hr>
+            <div class="modal_ellipsis">
+                <a>게시물 이동</a>
+            </div>
+            <hr>
+            <div class="modal_ellipsis">
+                <a>공유 대상...</a>
+            </div>
+            <hr>
+            <div class="modal_ellipsis">
+                <a>링크 복사</a>
+            </div>
+            <hr>
+            <div class="modal_ellipsis">
+                <a>퍼가기</a>
+            </div>
+            <hr>
+            <div class="modal_ellipsis">
+                <a data-bs-dismiss="modal">취소</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 댓글창 버튼 눌렀을 경우 열리는 모달창 -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel2">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                댓글 창
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
+                </button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 공유 버튼 눌렀을 때 열리는 모달 -->
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel3">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                공유 버튼
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
+                </button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /모달 창 모음-->
 </body>
 
 </html>

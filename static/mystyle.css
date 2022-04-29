@@ -1,4 +1,7 @@
-/* 섹션으로 메인과 오른쪽으로 구분 */
+* {
+    font-family: 'Do Hyeon', sans-serif;
+
+}
 section {
     display: flex;
     flex-direction: row;
@@ -20,6 +23,15 @@ nav {
     z-index: 1;
     border-bottom: 1px solid darkgray;
 
+}
+
+.nav_menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav_menu > .icon {
+    margin: 15px 0 0 0;
 }
 
 .container-fluid {
@@ -90,7 +102,8 @@ nav {
     height: 50px;
     border-radius: 70%;
     overflow: hidden;
-    margin: 10px;
+    margin: 8px;
+    border: 1px solid lightgrey;
 }
 
 .profile_img {
