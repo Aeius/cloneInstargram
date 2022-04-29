@@ -12,20 +12,29 @@
 .main_section {
     width: 600px;
     height: 100%;
-    margin-right: 360px;
+    margin: 80px 360px 80px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main_feed {
+    margin-bottom: 50px;
     border: 1px solid gray;
 }
 
-.main_profile_section {
-    border: solid 1px gray;
-    background-color: white;
+.content_box{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 170px; height: 20px
 }
 
 .right_section {
     width: 400px;
-    height: 1000px;
+    height: 100%;
     position: fixed;
-    left: 62%
+    left: 62%;
+    margin-top: 80px;
 }
 
 .profile_section {
@@ -61,13 +70,9 @@
 
 /* 헤더 부분 */
 header {
-    background-color: white;
-    width: auto;
-    height: 50px;
-    display: flex;
-    flex-direction: row; /* row로 설정할경우 가로로 정렬됨*/
-    justify-content: center;
-    align-items: center;
+
+    height: 40px;
+
 }
 
 /* 푸터 부분 */
