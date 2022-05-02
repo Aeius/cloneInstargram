@@ -123,9 +123,9 @@
                 </button>
             </div>
             <!-- 여러가지 버튼이 있는 곳(좋아요, 댓글, 공유, 스크랩) -->
-            <div class="main_btn" style="display: flex; flex-direction: row; justify-content: space-between">
+            <div class="main_btn">
                 <!--좋아요, 댓글창, 공유 버튼 묶음-->
-                <div style="display: flex; flex-direction: row; margin: 15px">
+                <div class="main_btn_left">
                     <!-- 좋아요 버튼-->
                     <div>
                         <a onclick="">
@@ -149,7 +149,7 @@
                     </div>
                 </div>
                 <!--북마크 버튼 묶음-->
-                <div style="margin-top: 15px;">
+                <div class="main_btn_right">
                     <!-- 북마크 버튼-->
                     <a onclick="">
                         <span><i class="fa-regular fa-bookmark fa-lg"></i></span>
@@ -159,14 +159,14 @@
             <!-- 이미지 아래로 게시글 정보가 출력되는 곳 -->
             <div class="main_inter_section">
                 <!-- 좋아요 -->
-                <div style="margin: 0px 10px 0px 15px;">
+                <div class="like_btn">
                     <a data-bs-toggle="modal" data-bs-target="#exampleModal2"> 좋아요 999개 </a>
                 </div>
                 <!-- 닉네임, 작성 글 내용-->
                 <div class="profile_box">
-                    <div style="display: flex; flex-direction: row; align-items: center">
+                    <div>
                         <div>
-                            <a href="index.html" class="" style="margin: 0px 10px 0px 10px;"><b>mokoko</b></a>
+                            <a href="index.html"><b>mokoko</b></a>
                         </div>
                         <div class="content_box">
                             <span class="content">무시무시한 궁당장들 어렵지만 재밌다!</span>
@@ -174,50 +174,49 @@
                     </div>
                 </div>
                 <!-- 댓글 총갯수 및 모든 댓글 보기-->
-                <div style="margin: 0px 10px 0px 15px;">
+                <div class="total_reply" >
                     <a data-bs-toggle="modal" data-bs-target="#exampleModal2">댓글 <span class="reply_count">299</span>개
                         모두 보기</a><br>
                 </div>
                 <!-- 댓글들 - 1 -->
-                <div style="display: flex; flex-direction: row; align-items: center">
+                <div class="reply_content_box">
                     <div>
-                        <a href="index.html" class="" style="margin: 0px 10px 0px 15px;"><b>Khamaen</b></a>
+                        <a href="index.html"><b>Khamaen</b></a>
                     </div>
                     <div class="content_box">
-                        <span class="content">괴..괴물!</span>
+                        <span class="">괴..괴물!</span>
                     </div>
                 </div>
                 <!-- 댓글들 - 2 -->
-                <div style="display: flex; flex-direction: row; align-items: center">
+                <div class="reply_content_box">
                     <div>
-                        <a href="index.html" class="" style="margin: 0px 10px 0px 15px;"><b>mokamoka</b></a>
+                        <a href="index.html"><b>mokamoka</b></a>
                     </div>
                     <div class="content_box">
-                        <span class="content">기분 좋은 향기가 솔솔~</span>
+                        <span class="">기분 좋은 향기가 솔솔~</span>
                     </div>
                 </div>
                 <!-- 날짜 표시 -->
-                <div style="margin: 0px 10px 0px 15px;">
+                <div class="elapse_date">
                     <a href="index.html" class="" style="text-decoration: none">5일 전</a>
                 </div>
             </div>
 
             <hr>
             <!--  댓글 쓰는 칸-->
-            <div class="reply_section" style="padding: 0 15px; display: flex; flex-direction: row;">
+            <div class="reply_section">
                 <!--이모티콘 삽입-->
-                <div style="margin: 5px">
-                    <a href="..." class="profile_img"><i class="fa-regular fa-face-smile fa-lg"></i></a>
+                <div>
+                    <a href="index.html" class="profile_img"><i class="fa-regular fa-face-smile fa-lg"></i></a>
                 </div>
                 <!--댓글 작성-->
-                <form class="">
-                    <div style="display: flex;flex-direction: row; justify-content: space-between; width: 500px;">
-                        <div class="">
-                            <input type="text" style="border: none; background-color: #FAFAFA; outline: none"
-                                   width="300px" placeholder="댓글 작성">
+                <form class="reply_form">
+                    <div class="reply_write_box">
+                        <div>
+                            <input type="text" width="300px" placeholder="댓글 작성">
                         </div>
-                        <div class="">
-                            <a class="" style="color: cornflowerblue; text-decoration: none">게시</a>
+                        <div>
+                            <a href="index.html">게시</a>
                         </div>
                     </div>
                 </form>
@@ -281,9 +280,9 @@
                 </button>
             </div>
             <!-- 여러가지 버튼이 있는 곳(좋아요, 댓글, 공유, 스크랩) -->
-            <div class="main_btn" style="display: flex; flex-direction: row; justify-content: space-between">
+            <div class="main_btn">
                 <!--좋아요, 댓글창, 공유 버튼 묶음-->
-                <div style="display: flex; flex-direction: row; margin: 15px">
+                <div class="main_btn_left" style="">
                     <!-- 좋아요 버튼-->
                     <div>
                         <a onclick="">
@@ -307,7 +306,7 @@
                     </div>
                 </div>
                 <!--북마크 버튼 묶음-->
-                <div style="margin-top: 15px;">
+                <div class="main_btn_right" >
                     <!-- 북마크 버튼-->
                     <a onclick="">
                         <span><i class="fa-regular fa-bookmark fa-lg"></i></span>
@@ -317,14 +316,14 @@
             <!-- 이미지 아래로 게시글 정보가 출력되는 곳 -->
             <div class="main_inter_section">
                 <!-- 좋아요 -->
-                <div style="margin: 0px 10px 0px 15px;">
+                <div class="like_btn">
                     <a data-bs-toggle="modal" data-bs-target="#exampleModal2"> 좋아요 999개 </a>
                 </div>
                 <!-- 닉네임, 작성 글 내용-->
                 <div class="profile_box">
-                    <div style="display: flex; flex-direction: row; align-items: center">
+                    <div>
                         <div>
-                            <a href="index.html" class="" style="margin: 0px 10px 0px 10px;"><b>mokoko</b></a>
+                            <a href="index.html" class=""><b>mokoko</b></a>
                         </div>
                         <div class="content_box">
                             <span class="content">모코코 맘스세트 존맛!</span>
@@ -332,50 +331,49 @@
                     </div>
                 </div>
                 <!-- 댓글 총갯수 및 모든 댓글 보기-->
-                <div style="margin: 0px 10px 0px 15px;">
+                <div class="total_reply">
                     <a data-bs-toggle="modal" data-bs-target="#exampleModal2">댓글 <span class="reply_count">299</span>개
                         모두 보기</a><br>
                 </div>
                 <!-- 댓글들 - 1 -->
-                <div style="display: flex; flex-direction: row; align-items: center">
+                <div class="reply_content_box">
                     <div>
-                        <a href="index.html" class="" style="margin: 0px 10px 0px 15px;"><b>bahunthur</b></a>
+                        <a href="index.html" class=""><b>bahunthur</b></a>
                     </div>
                     <div class="content_box">
-                        <span class="content">아우님! 치킨에는 맥주아니겠어?! 한잔하자구!</span>
+                        <span class="">아우님! 치킨에는 맥주아니겠어?! 한잔하자구!</span>
                     </div>
                 </div>
                 <!-- 댓글들 - 2 -->
-                <div style="display: flex; flex-direction: row; align-items: center">
+                <div class="reply_content_box">
                     <div>
-                        <a href="index.html" class="" style="margin: 0px 10px 0px 15px;"><b>mokamoka</b></a>
+                        <a href="index.html" class=""><b>mokamoka</b></a>
                     </div>
                     <div class="content_box">
                         <span class="content">치킨 향기가 솔솔~</span>
                     </div>
                 </div>
                 <!-- 날짜 표시 -->
-                <div style="margin: 0px 10px 0px 15px;">
+                <div class="elapse_date">
                     <a href="index.html" class="" style="text-decoration: none">16일 전</a>
                 </div>
             </div>
 
             <hr>
             <!--  댓글 쓰는 칸-->
-            <div class="reply_section" style="padding: 0 15px; display: flex; flex-direction: row;">
+            <div class="reply_section">
                 <!--이모티콘 삽입-->
-                <div style="margin: 5px">
-                    <a href="..." class="profile_img"><i class="fa-regular fa-face-smile fa-lg"></i></a>
+                <div>
+                    <a href="index.html" class=""><i class="fa-regular fa-face-smile fa-lg"></i></a>
                 </div>
                 <!--댓글 작성-->
                 <form class="">
-                    <div style="display: flex;flex-direction: row; justify-content: space-between; width: 500px;">
+                    <div class="reply_write_box">
                         <div class="">
-                            <input type="text" style="border: none; background-color: #FAFAFA; outline: none"
-                                   width="300px" placeholder="댓글 작성">
+                            <input type="text" width="300px" placeholder="댓글 작성">
                         </div>
                         <div class="">
-                            <a class="" style="color: cornflowerblue; text-decoration: none">게시</a>
+                            <a href="index.html" class="" >게시</a>
                         </div>
                     </div>
                 </form>
@@ -435,7 +433,7 @@
             <!-- 여러가지 버튼이 있는 곳(좋아요, 댓글, 공유, 스크랩) -->
             <div class="main_btn" style="display: flex; flex-direction: row; justify-content: space-between">
                 <!--좋아요, 댓글창, 공유 버튼 묶음-->
-                <div style="display: flex; flex-direction: row; margin: 15px">
+                <div class="main_btn_left">
                     <!-- 좋아요 버튼-->
                     <div>
                         <a onclick="">
@@ -459,7 +457,7 @@
                     </div>
                 </div>
                 <!--북마크 버튼 묶음-->
-                <div style="margin-top: 15px;">
+                <div class="main_btn_right">
                     <!-- 북마크 버튼-->
                     <a onclick="">
                         <span><i class="fa-regular fa-bookmark fa-lg"></i></span>
@@ -469,65 +467,64 @@
             <!-- 이미지 아래로 게시글 정보가 출력되는 곳 -->
             <div class="main_inter_section">
                 <!-- 좋아요 -->
-                <div style="margin: 0px 10px 0px 15px;">
+                <div class="like_btn">
                     <a data-bs-toggle="modal" data-bs-target="#exampleModal2"> 좋아요 999개 </a>
                 </div>
                 <!-- 닉네임, 작성 글 내용-->
                 <div class="profile_box">
-                    <div style="display: flex; flex-direction: row; align-items: center">
+                    <div>
                         <div>
-                            <a href="index.html" class="" style="margin: 0px 10px 0px 10px;"><b>mokoko</b></a>
+                            <a href="index.html" class=""><b>mokoko</b></a>
                         </div>
                         <div class="content_box">
-                            <span class="content">4월 5일은 모코코생일!</span>
+                            <span class="">4월 5일은 모코코생일!</span>
                         </div>
                     </div>
                 </div>
                 <!-- 댓글 총갯수 및 모든 댓글 보기-->
-                <div style="margin: 0px 10px 0px 15px;">
+                <div class="total_reply">
                     <a data-bs-toggle="modal" data-bs-target="#exampleModal2">댓글 <span class="reply_count">299</span>개
                         모두 보기</a><br>
                 </div>
                 <!-- 댓글들 - 1 -->
-                <div style="display: flex; flex-direction: row; align-items: center">
+                <div class="reply_content_box">
                     <div>
-                        <a href="index.html" class="" style="margin: 0px 10px 0px 15px;"><b>silian</b></a>
+                        <a href="index.html" class=""><b>silian</b></a>
                     </div>
                     <div class="content_box">
                         <span class="content">생일 축하하네 친구!</span>
                     </div>
                 </div>
                 <!-- 댓글들 - 2 -->
-                <div style="display: flex; flex-direction: row; align-items: center">
+                <div class="reply_content_box">
                     <div>
-                        <a href="index.html" class="" style="margin: 0px 10px 0px 15px;"><b>chipmunk_yom</b></a>
+                        <a href="index.html" class="" ><b>chipmunk_yom</b></a>
                     </div>
                     <div class="content_box">
                         <span class="content">생일 축하해욤!</span>
                     </div>
                 </div>
                 <!-- 날짜 표시 -->
-                <div style="margin: 0px 10px 0px 15px;">
+                <div class="elapse_date">
                     <a href="index.html" class="" style="text-decoration: none">24일 전</a>
                 </div>
             </div>
 
             <hr>
             <!--  댓글 쓰는 칸-->
-            <div class="reply_section" style="padding: 0 15px; display: flex; flex-direction: row;">
+            <div class="reply_section">
                 <!--이모티콘 삽입-->
-                <div style="margin: 5px">
+                <div>
                     <a href="..." class="profile_img"><i class="fa-regular fa-face-smile fa-lg"></i></a>
                 </div>
                 <!--댓글 작성-->
                 <form class="">
-                    <div style="display: flex;flex-direction: row; justify-content: space-between; width: 500px;">
+                    <div class="reply_write_box">
                         <div class="">
-                            <input type="text" style="border: none; background-color: #FAFAFA; outline: none"
-                                   width="300px" placeholder="댓글 작성">
+                            <input type="text" width="300px" placeholder="댓글 작성">
                         </div>
                         <div class="">
-                            <a class="" style="color: cornflowerblue; text-decoration: none">게시</a>
+                            <a class="">게시</a>
                         </div>
                     </div>
                 </form>
