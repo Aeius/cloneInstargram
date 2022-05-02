@@ -25,7 +25,29 @@
 <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
 <!-- 반응형 웹을 위한 미디어쿼리 선언부 -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- jquery 연결-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
+<script>
+<!-- 더보기 버튼 활성화 및 닫기 자바스크립트 -->
+function showplay() {
+
+        var SynopsisDiv = $('.content_box');
+        var flagValue = $("#synopMore").text();
+        if (flagValue == "더보기") {
+                //보이지 않는 영역을 다 보일수있도록 heigh와 width를 auto로 지정
+                SynopsisDiv.css("width", "auto");
+                SynopsisDiv.css("height", "auto");
+                $("#synopMore").text("닫기");
+        }
+        else {
+            //다시 css를 원래대로 보일수 있도록 변경*/
+            SynopsisDiv.css("width", "210px");
+            SynopsisDiv.css("height", "20px");
+            $("#synopMore").text("더보기");
+        }
+    }
+</script>
 <body>
 <header>
     <nav>
@@ -171,8 +193,11 @@
                             <a href="index.html"><b>mokoko</b></a>
                         </div>
                         <div class="content_box">
-                            <span class="content">무시무시한 궁당장들 어렵지만 재밌다!</span>
+                            <span class="content">
+                                무시무시한 궁당장들 어렵지만 재밌다!<br>😊🤣👊💪
+                            </span>
                         </div>
+                        <a href="javascript:showplay();" class="btn_more" id="synopMore">더보기</a>
                     </div>
                 </div>
                 <!-- 댓글 총갯수 및 모든 댓글 보기-->
@@ -185,7 +210,7 @@
                     <div>
                         <a href="index.html"><b>Khamaen</b></a>
                     </div>
-                    <div class="content_box">
+                    <div class="reply_content_box">
                         <span class="">괴..괴물!</span>
                     </div>
                 </div>
@@ -194,7 +219,7 @@
                     <div>
                         <a href="index.html"><b>mokamoka</b></a>
                     </div>
-                    <div class="content_box">
+                    <div class="reply_content_box">
                         <span class="">기분 좋은 향기가 솔솔~</span>
                     </div>
                 </div>
@@ -342,7 +367,7 @@
                     <div>
                         <a href="index.html" class=""><b>bahunthur</b></a>
                     </div>
-                    <div class="content_box">
+                    <div class="reply_content_box">
                         <span class="">아우님! 치킨에는 맥주아니겠어?! 한잔하자구!</span>
                     </div>
                 </div>
@@ -351,7 +376,7 @@
                     <div>
                         <a href="index.html" class=""><b>mokamoka</b></a>
                     </div>
-                    <div class="content_box">
+                    <div class="reply_content_box">
                         <span class="content">치킨 향기가 솔솔~</span>
                     </div>
                 </div>
@@ -493,7 +518,7 @@
                     <div>
                         <a href="index.html" class=""><b>silian</b></a>
                     </div>
-                    <div class="content_box">
+                    <div class="reply_content_box">
                         <span class="content">생일 축하하네 친구!</span>
                     </div>
                 </div>
@@ -502,7 +527,7 @@
                     <div>
                         <a href="index.html" class="" ><b>chipmunk_yom</b></a>
                     </div>
-                    <div class="content_box">
+                    <div class="reply_content_box">
                         <span class="content">생일 축하해욤!</span>
                     </div>
                 </div>

@@ -161,8 +161,15 @@ nav {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 180px;
-    height: 20px
+    width: 210px;
+    height: 20px;
+}
+reply_content_box {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 300px;
+    height: 20px;
 }
 
 .reply_section {
@@ -181,7 +188,6 @@ nav {
     justify-content: space-between;
     width: 500px;
 }
-
 
 .reply_write_box > div > input {
     border: none;
